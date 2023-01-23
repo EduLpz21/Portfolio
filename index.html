@@ -2,27 +2,26 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=brave">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="estilo.css">
+    <title>Portfolio ELM</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="efectos.css">
 </head>
 <body>
     <!-- MENU ENCABEZADO -->
     <div class="contenedor-header">
         <header>
             <div class="logo">
-                <a href="#">Nick</a>
+                <a href="#">Eduardo López</a>
             </div>
             <nav id="nav">
                 <ul>
                     <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
                     <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
                     <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
-                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
-                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
-                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">INFO</a></li>
                 </ul>
             </nav>
             <div class="nav-responsive" onclick="mostrarOcultarMenu()">
@@ -37,14 +36,14 @@
             <div class="contenedor-img">
                 <img src="img/hero.png" alt="">
             </div>
-            <h1>NICK PEREZ</h1>
-            <h2>Ingeniero de Software - Experto UI/UX</h2>
+                <div class="glitchs">
+                    Eduardo López
+                </div>
+            <h2>Ingeniero en tecnologías de la información</h2>
             <div class="redes">
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-skype"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="#"><i class="fa-solid fa-rss"></i></a>
+                <a href="https://twitter.com/EduLpz21" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/edulpz21/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/eduardo-lpzmtz" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
             </div>
         </div>
     </section>
@@ -53,36 +52,24 @@
     <section id="sobremi" class="sobremi">
         <div class="contenido-seccion">
             <h2>Sobre Mí</h2>
-            <p><span>Hola, soy Nick Perez.</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam unde soluta minima necessitatibus, voluptas consectetur vero officiis quas, explicabo deleniti repellendus aliquid debitis maiores numquam voluptate reprehenderit in delectus dolores.</p>
+            <p><span>Hola, soy Eduardo López.</span> Recien egresado en ingenieria en tecnologías de la información. Busco especializarme en el desarrollo web y en el analisis de datos. Soy alguien  con ganas de seguir creciendo personal y profesionalmente enfrentandome a nuevos retos.</p>
 
             <div class="fila">
                 <!-- datos personales -->
                 <div class="col">
-                    <h3>Datos Personales</h3>
+                    <h3>Contacto</h3>
                     <ul>
                         <li>
-                            <strong>Cumpleaños</strong>
-                            15-01-1980
-                        </li>
-                        <li>
                             <strong>Teléfono</strong>
-                            2555 5454545
+                            +52 444 517 8281
                         </li>
                         <li>
                             <strong>Email</strong>
-                            cw@example.com
+                            eduardo.loma.08@gmail.com
                         </li>
                         <li>
-                            <strong>Website</strong>
-                            www.example.com
-                        </li>
-                        <li>
-                            <strong>Dirección</strong>
-                            123 San Luis, Argentina
-                        </li>
-                        <li>
-                            <strong>Cargo</strong>
-                            <span>FREELANCE</span>
+                            <strong>Ubicación</strong>
+                            San Luis Potosí, México
                         </li>
                     </ul>
                 </div>
@@ -100,37 +87,22 @@
                             <span>MUSICA</span>
                         </div>
                         <div class="interes">
-                            <i class="fa-solid fa-plane"></i>
-                            <span>VIAJAR</span>
+                            <i class="fa-solid fa-mobile-screen"></i>
+                            <span>TECNOLOGÍA</span>
                         </div>
                         <div class="interes">
-                            <i class="fa-brands fa-apple"></i>
-                            <span>MAC OS</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-person-hiking"></i>
-                            <span>DEPORTE</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-book"></i>
-                            <span>LIBROS</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-car"></i>
-                            <span>AUTOS</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-camera"></i>
-                            <span>FOTOS</span>
-                        </div>
-                        
+                            <i class="fa-brands fa-twitch"></i>
+                            <span>STREAMS</span>
+                        </div>                    
                     </div>
                 </div>
             </div>
-            <button>
-                Descargar CV <i class="fa-solid fa-download"></i>
-                <span class="overlay"></span>
-            </button>
+            <a href="Docs/CV_Eduardo Lopez Martinez.pdf" download="CV_Eduardo Lopez Martinez" style="text-decoration: none;">
+                <button>
+                    Descargar CV <i class="fa-solid fa-download"></i>
+                    <span class="overlay"></span>
+                </button>
+            </a>
         </div>
     </section>
 
@@ -141,53 +113,25 @@
             <div class="fila">
                 <!-- Technical Skill -->
                 <div class="col">
-                    <h3>Technical Skills</h3>
-                    <div class="skill">
-                        <span>Javascript</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>75%</span>
-                            </div>
-                        </div>
-                    </div>
+                    <h3>Técnicas</h3>
                     <div class="skill">
                         <span>HTML & CSS</span>
                         <div class="barra-skill">
                             <div class="progreso">
-                                <span>89%</span>
+                                <span>90%</span>
                             </div>
                         </div>
                     </div>
                     <div class="skill">
-                        <span>Photoshop</span>
+                        <span>Javascript</span>
                         <div class="barra-skill">
                             <div class="progreso">
-                                <span>95%</span>
+                                <span>85%</span>
                             </div>
                         </div>
                     </div>
                     <div class="skill">
-                        <span>Wordpress</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>81%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Drupa</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>55%</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Professional Skills -->
-                <div class="col">
-                    <h3>Professional Skills</h3>
-                    <div class="skill">
-                        <span>Comunicación</span>
+                        <span>PHP</span>
                         <div class="barra-skill">
                             <div class="progreso">
                                 <span>80%</span>
@@ -195,34 +139,62 @@
                         </div>
                     </div>
                     <div class="skill">
+                        <span>Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>C#</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Profesionales</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
                         <span>Trabajo en Equipo</span>
                         <div class="barra-skill">
                             <div class="progreso">
-                                <span>70%</span>
+                                <span>90%</span>
                             </div>
                         </div>
                     </div>
                     <div class="skill">
-                        <span>Creatividad</span>
+                        <span>Organización</span>
                         <div class="barra-skill">
                             <div class="progreso">
-                                <span>99%</span>
+                                <span>85%</span>
                             </div>
                         </div>
                     </div>
                     <div class="skill">
-                        <span>Dedicación</span>
+                        <span>Flexibilidad</span>
                         <div class="barra-skill">
                             <div class="progreso">
-                                <span>65%</span>
+                                <span>90%</span>
                             </div>
                         </div>
                     </div>
                     <div class="skill">
-                        <span>Proyect Management</span>
+                        <span>Autodidacta</span>
                         <div class="barra-skill">
                             <div class="progreso">
-                                <span>94%</span>
+                                <span>90%</span>
                             </div>
                         </div>
                     </div>
@@ -234,33 +206,24 @@
     <!-- SECCION CURRICULUM -->
     <section id="curriculum" class="curriculum">
         <div class="contenido-seccion">
-            <h2>Curriculum</h2>
+            <h2>Educación y trabajo</h2>
             <div class="fila">
                 <div class="col izquierda">
                     <h3>Educación</h3>
                     <div class="item izq">
-                        <h4>Arte y Multimedia</h4>
-                        <span class="casa">Universidad de Oxford</span>
-                        <span class="fecha">2005 - 2008</span>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <h4>Ing. en tecnologías de la información</h4>
+                        <span class="casa">Universidad de Politécnica de San Luis Potosí</span>
+                        <span class="fecha">2018 - 2022</span>
                         <div class="conectori">
                             <div class="circuloi"></div>
                         </div>
                     </div>
                     <div class="item izq">
-                        <h4>Arte y Multimedia</h4>
-                        <span class="casa">Universidad de Oxford</span>
-                        <span class="fecha">2005 - 2008</span>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-                    <div class="item izq">
-                        <h4>Arte y Multimedia</h4>
-                        <span class="casa">Universidad de Oxford</span>
-                        <span class="fecha">2005 - 2008</span>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <h4>Certificados</h4>
+                        <span class="casa">Microsoft</span>
+                        <ol>HTML y CSS</ol>
+                        <ol>JavaScript</ol>
+                        <ol>Desarrollo de Software</ol>
                         <div class="conectori">
                             <div class="circuloi"></div>
                         </div>
@@ -270,28 +233,13 @@
                 <div class="col derecha">
                     <h3>Experiencia de trabajo</h3>
                     <div class="item der">
-                        <h4>Front Developer</h4>
-                        <span class="casa">Nombre de Compañía</span>
-                        <span class="fecha">2005 - 2008</span>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
-                    </div>
-                    <div class="item der">
-                        <h4>Front Developer</h4>
-                        <span class="casa">Nombre de Compañía</span>
-                        <span class="fecha">2005 - 2008</span>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
-                    </div>
-                    <div class="item der">
-                        <h4>Front Developer</h4>
-                        <span class="casa">Nombre de Compañía</span>
-                        <span class="fecha">2005 - 2008</span>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <h4>Auxiliar de Operaciones</h4>
+                        <span class="casa">Seguros El Potosí</span>
+                        <span class="fecha">2021 - 2022</span>
+                        <ol>Creación de proceso de validación de datos</ol>
+                        <ol>Desarrollo de sitio de SharePoint</ol>
+                        <ol>Creación de sistema automatizado para control de cambios de documentos con Power Apps y Power Automate</ol>
+                        <ol>Creación y mantenimiento a Dashboards de Power BI</ol>
                         <div class="conectord">
                             <div class="circulod"></div>
                         </div>
@@ -302,7 +250,7 @@
     </section>
 
     <!-- SECCION PORTFOLIO -->
-    <section id="portfolio" class="portfolio">
+    <!-- <section id="portfolio" class="portfolio">
         <div class="contenido-seccion">
             <h2>PORTFOLIO</h2>
             <div class="galeria">
@@ -350,48 +298,7 @@
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- SECCION CONTACTO -->
-    <section id="contacto" class="contacto">
-        <div class="contenido-seccion">
-            <h2>CONTACTO</h2>
-            <div class="fila">
-                <!-- Formulario -->
-                <div class="col">
-                    <input type="text" placeholder="Tú Nombre">
-                    <input type="text" placeholder="Número telefónico">
-                    <input type="text" placeholder="Dirección de correo">
-                    <input type="text" placeholder="Tema">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                    <button>
-                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
-                        <span class="overlay"></span>
-                    </button>
-                </div>
-                <!-- Mapa -->
-                <div class="col">
-                    <img src="img/ubicacion.png" alt="">
-                    <div class="info">
-                        <ul>
-                            <li>
-                                <i class="fa-solid fa-location-dot"></i>
-                                Nicaragua 159, San Rafael Mza
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-mobile-screen"></i>
-                                Llamanos: 2384 - 4343443 
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-envelope"></i>
-                                Email: cw@example.com
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    </section> -->
 
     <!-- footer -->
     <footer>
@@ -399,11 +306,9 @@
             <i class="fa-solid fa-angles-up"></i>
         </a>
         <div class="redes">
-            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-skype"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="#"><i class="fa-solid fa-rss"></i></a>
+            <a href="https://twitter.com/EduLpz21" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.instagram.com/edulpz21/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/eduardo-lpzmtz" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
         </div>
     </footer>
 
